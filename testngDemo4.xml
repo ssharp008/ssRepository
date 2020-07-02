@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="my_suite_1">
+    <listeners>
+       <listener class-name="com.bwf.framework.utils.TestListener"/>
+       <listener class-name="com.bwf.framework.utils.RetryListener"/>
+    </listeners> 
+    <test name="Listener test1">
+       <classes>
+           <class name="com.bwf.ecshop.tests.LoginTest"/>
+       </classes>
+    </test>
+</suite>
