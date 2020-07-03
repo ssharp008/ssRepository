@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="my_suite_1">
+    <parameter name="username" value="liudao"/>
+    <parameter name="password" value="123456"/>
+    <test name="regressiong test1">
+       <classes>
+           <class name="com.bwf.tests.ParameterTest"/>
+           <!--<class name="com.bwf.tests.TestDemo2"/>-->
+       </classes>
+    </test>
+    <!-- <test name="regressiong test2">
+       <classes>
+           <class name="com.bwf.tests.TestDemo3"/>
+           <class name="com.bwf.tests.TestDemo4"/>
+       </classes>
+    </test> -->
+</suite>
