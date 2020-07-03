@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [my_suite_1]">
+  <listeners>
+    <listener class-name="com.bwf.framework.utils.TestListener"/>
+    <listener class-name="com.bwf.framework.utils.RetryListener"/>
+  </listeners>
+  <test name="Listener test1(failed)">
+    <classes>
+      <class name="com.bwf.ecshop.tests.LoginTest">
+        <methods>
+          <include name="initDriver"/>
+          <include name="testLogin_success"/>
+          <include name="closeService"/>
+          <include name="quitDriver"/>
+        </methods>
+      </class> <!-- com.bwf.ecshop.tests.LoginTest -->
+    </classes>
+  </test> <!-- Listener test1(failed) -->
+</suite> <!-- Failed suite [my_suite_1] -->
